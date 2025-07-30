@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise Cinta 💝</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hati Jatuh -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      let heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <h1>💌 HBD Sayangkuuuu...</h1>
+  <div class="typing">Mamacii sudah menjawab dengan jujur... Aku punya hadiah kecil buat kamu 🎁</div>
+
+  <!-- Tombol -->
+<button class="button-love" onclick="document.getElementById('myModal').style.display='block'">
+  Tekan Aku 💝
+</button>
+
+<!-- Pop-up Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <p>💝 Semoga yang kamu impikan terwujud<br> jadi pribadi yang lebih baik lagi.<br>
+    Dengerin nasehat cowonya<br> <strong>kurang-kurangin ngutangnya </strong>🎂🎉🎈</p>
+  </div>
+</div>
+
+</body>
+</html>

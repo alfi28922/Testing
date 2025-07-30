@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pertanyaan Cinta</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('test.jpg ') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .love-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      color: #555;
+      font-size: 16px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Foto Kiri -->
+  <div class="foto-container kiri" onclick="toggleGallery('kiri')">
+    <img src="foto1.jpg" alt="Foto Kiri" class="utama" />
+    <div class="gallery" id="gallery-kiri">
+      <img src="foto2.jpg" alt="Foto kiri 2" />
+      <img src="foto3.jpg" alt="Foto kiri 3" />
+    </div>
+  </div>
+
+  <!-- Foto Kanan -->
+  <div class="foto-container kanan" onclick="toggleGallery('kanan')">
+    <img src="foto4.jpg" alt="Foto Kanan" class="utama" />
+    <div class="gallery" id="gallery-kanan">
+      <img src="foto5.jpg" alt="Foto kanan 2" />
+      <img src="foto6.jpg" alt="Foto kanan 3" />
+    </div>
+  </div>
+
+  <div class="love-container">
+    <h1>💌 Pertanyaan untuk Kamu 💌</h1>
+    
+    <form action="surprise.html">
+      <label for="q1">1. 🌹 Apa yang paling kamu suka dari aku?</label>
+      <input type="text" id="q1" name="q1" required>
+
+      <label for="q2">2. ✨ Kapan momen paling romantis menurut kamu?</label>
+      <input type="text" id="q2" name="q2" required>
+
+      <label for="q3">3. 💖 Apa yang paling kamu tidak suka dari aku ? </label>
+      <input type="text" id="q3" name="q3" required>
+
+      <button type="submit"> Siap — Lanjut 💕</button>
+    </form>
+  </div>
+  <script>
+  function toggleGallery(posisi) {
+    const gallery = document.getElementById(`gallery-${posisi}`);
+    if (gallery.style.display === "flex") {
+      gallery.style.display = "none";
+    } else {
+      gallery.style.display = "flex";
+    }
+  }
+</script>
+ 
+</body>
+</html>
