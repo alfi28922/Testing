@@ -1,0 +1,305 @@
+/* ==== GLOBAL ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container,
+.home-container,
+.surprise-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* ==== INPUT & BUTTON ==== */
+input[type="text"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5b86e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #36d1dc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('test.jpg ') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.love-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  color: #555;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e91e63;
+}
+
+/* FOTO KANAN & KIRI */
+.foto-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.foto-container.kiri {
+  left: 90px;
+}
+
+.foto-container.kanan {
+  right: 90px;
+}
+
+.foto-container img.utama {
+  width: 170px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.foto-container:hover img.utama {
+  transform: scale(1.05);
+}
+
+.gallery {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==== SURPRISE PAGE ==== */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fad0c4, #ffd1ff);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+h1 {
+  color: #e91e63;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.typing {
+  font-size: 20px;
+  color: #333;
+  max-width: 80ch; /* 60 karakter lebar */
+  text-align: center;
+  border-right: 2px solid #e91e63;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.button-love {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.button-love:hover {
+  background-color: #e91e63;
+}
+
+/* Hati Jatuh */
+.heart {
+  position: absolute;
+  color: #ff6b81;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -10%; transform: translateX(0); }
+  100% { top: 110%; transform: translateX(30px); }
+}
+
+.alert {
+  padding: 30px;
+  background-color: #ffe0ec; /* pink lembut */
+  color: #d10060;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-weight: bold;
+  animation: popUp 0.4s ease-out;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Tombol */
+.button-love {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #ff5e9c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  color: #333;
+  margin: 10% auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
